@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>National Computer College - Brochure</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg-start:#0b4f93;
+      --bg-end:#2b84d2;
+      --accent:#ffffff;
+      --muted:rgba(255,255,255,0.9);
+      --card-bg:rgba(255,255,255,0.06);
+      --highlight-border:rgba(255,255,255,0.85);
+    }
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:'Montserrat',system-ui;
+      background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAOBTJY9oqvz3agkf3MSx5RG1XYgzlTz0-j0ZHed7TFW56ewUQptcW6bk&s=10') center/cover no-repeat;
+      color:var(--muted);
+      padding:40px 20px;
+    }
+
+    .brochure{
+      max-width:900px;
+      margin:0 auto;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border-radius:14px;
+      padding:28px;
+      box-shadow:0 8px 30px rgba(0,0,0,0.35);
+      border:1px solid rgba(255,255,255,0.06);
+    }
+
+    header{text-align:center;margin-bottom:22px}
+    header h1{font-weight:700;margin:6px 0;font-size:34px;color:black}
+    header h2{font-weight:400;margin:0;font-size:16px;color:black}
+
+    .intro{background:var(--card-bg);padding:18px;border-radius:10px;margin-bottom:18px}
+
+    .highlight{
+      border:2px solid var(--highlight-border);
+      border-radius:10px;
+      padding:14px;
+      background:rgba(255,255,255,0.78);
+      color:#000;
+      margin:14px 0;
+      transition: all 0.3s ease;
+    }
+
+    .highlight:hover{
+      transform: scale(1.03);
+      box-shadow:0 8px 25px rgba(255,255,255,0.5); 
+      cursor:pointer;
+    }
+
+    .two-col{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
+      align-items:start;
+    }
+
+    h3{margin-top:0;color:black}
+    p{line-height:1.6;margin:8px 0;color:black}
+    ul{padding-left:18px}
+    li{margin:6px 0}
+
+    footer{text-align:center;margin-top:26px;color:white;font-size:14px}
+
+    @media(max-width:760px){
+      .two-col{grid-template-columns:1fr}
+      header h1{font-size:26px}
+    }
+  </style>
+</head>
+
+<body>
+  <main class="brochure" role="main">
+    <header>
+      <h1>National Computer College</h1>
+      <h2>Welcome To National Computer College</h2>
+
+      
+      <p>
+        <a href="file:///C:/Users/JE/Downloads/National%20Computer%20College.html" 
+           style="color:blue; font-weight:bold;" 
+           target="_blank">
+           Open NCC Website
+        </a>
+      </p>
+    </header>
+
+    <section class="intro highlight">
+      <p style="color:black;">National Computer College provides great help for those who want to learn coding and many more...</p>
+    </section>
+
+    <div class="two-col">
+      <section>
+        <div class="highlight">
+          <p style="color:black;">At National Computer College, we believe that every student deserves the opportunity...</p>
+        </div>
+
+        <div class="highlight">
+          <h3>Beyond Academics</h3>
+          <p style="color:black;">Beyond academics, the school provides access to free computers...</p>
+        </div>
+      </section>
+
+      <aside>
+        <div class="highlight">
+          <h3>Vision</h3>
+          <p>To become a school where future innovators and tech leaders are made.</p>
+        </div>
+
+        <div class="highlight">
+          <h3>Mission</h3>
+          <p>To make technology education accessible and fun...</p>
+        </div>
+
+        <div class="highlight">
+          <h3>Core Values</h3>
+          <ul>
+            <li>Empowerment</li><li>Accessibility</li><li>Skills</li><li>Innovation</li><li>Excellence</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <section class="highlight">
+      <h3>Enrollment Form - How to Enroll</h3>
+      <ol>
+        <li>Copy of birth certificate.</li>
+        <li>Report card.</li>
+        <li>Choose a desired program.</li>
+        <li>Submit all requirements at the Admission office.</li>
+        <li>Pay enrollment fee.</li>
+        <li>Wait for class schedule.</li>
+      </ol>
+    </section>
+
+    <footer>
+      <p>With a strong focus on coding, programming, and digital skills, the school equips learners for success.</p>
+    </footer>
+
+  </main>
+</body>
+</html>
